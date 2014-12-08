@@ -1,0 +1,16 @@
+{
+  "name": "p4-website-optimization",
+  "version": "1.0.0",
+  "description": "Udacity Front-End Nanodegree Project 4",
+  "devDependencies": {
+    "assemble": "^0.4.42",
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.10.0",
+    "grunt-contrib-uglify": "^0.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-pagespeed": "^0.3.0",
+    "load-grunt-tasks": "^1.0.0",
+    "ngrok": "^0.1.98",
+    "node-static": "^0.7.6"
+  }
+}
