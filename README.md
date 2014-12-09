@@ -11,6 +11,7 @@
 Download the project and run '> npm i' to install the dependencies.
 After that run the default task: '> grunt' it will:
 
+* minify js/css
 * start a web server
 * start ngrok tunnel
 * run pagespeed
