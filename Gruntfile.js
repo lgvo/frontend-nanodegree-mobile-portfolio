@@ -53,6 +53,7 @@ module.exports = function(grunt) {
         var done = this.async();
         var port = 9292;
 
+        // runs a http-server before calling ngrok and pagespeed
         var file = new nodeStatic.Server('./', {cache: 864000, gzip: true});
         require('http').createServer(function(request, response){
             request.addListener('end', function(){

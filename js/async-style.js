@@ -1,3 +1,4 @@
+// loading css on background while the main page with the more-critical css is rendering
 // add the no-critical CSS to render after the page loads
 (function() {
     var addResources = function() {

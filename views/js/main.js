@@ -497,7 +497,13 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 // The following code for sliding background pizzas was pulled from Ilya's demo found at:
 // https://www.igvita.com/slides/2012/devtools-tips-and-tricks/jank-demo.html
 
-
+/**
+ * Calc the phase to move the pizza.
+ *
+ * @param {number} topScroll position
+ * @param {number} i pizza index
+ * @returns {number}
+ */
 function calcPhase(topScroll, i) {
   return Math.sin((topScroll / 1250) + (i % 5));
 }
@@ -506,9 +512,12 @@ function calcPhase(topScroll, i) {
 function updatePositions() {
 
   window.performance.mark("mark_start_frame");
+
+  // get the top scroll position only one time while updating
   var topScroll = document.body.scrollTop;
 
   frame++;
+  // updates the pizzas on array
   movingPizzas.forEach(function(pizza, i) {
     pizza.style.left = pizza.basicLeft + 100 * calcPhase(topScroll, i) + 'px';
   });
@@ -526,7 +535,12 @@ function updatePositions() {
 // runs updatePositions on scroll
 window.addEventListener('scroll', updatePositions);
 
+/**
+ * Array to store all moviming pizzas elements.
+ * @type {Array.<Element>}
+ */
 var movingPizzas = [];
+
 // Generates the sliding pizzas when the page loads.
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
