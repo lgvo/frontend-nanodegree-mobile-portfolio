@@ -2,7 +2,7 @@
 
 ### Minified Resources
 
-All minified resources will be at the folder opmitized.
+All minified resources will be at the folder optimized.
 Every build (grunt default) will replace (or create if no one exists) with new changes.
 
 ## Required tools
