@@ -1,0 +1,5 @@
+npm-debug.log
+optimized/*
+node_modules
+.idea
+*.iml

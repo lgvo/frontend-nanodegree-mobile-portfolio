@@ -5,7 +5,7 @@
         var h = document.getElementsByTagName('head')[0];
         var ss = window.document.createElement('link');
         ss.rel = 'stylesheet';
-        ss.href = 'css/style.min.css';
+        ss.href = 'css/style.css';
         h.appendChild(ss);
     };
 
